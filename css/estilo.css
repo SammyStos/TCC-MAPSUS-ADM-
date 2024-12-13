@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal */
+    color: #353535; /* Cor de texto principal */
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduz ainda mais o espaçamento para diminuir a navbar */
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra mais intensa */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Aumenta o tamanho do logo */
+    margin-right: 20px;
+}
+
+.logo span {
+    font-size: 28px; /* Aumenta o tamanho da fonte */
+    font-family: 'Poppins', sans-serif; /* Fonte estilizada para o logo */
+    font-weight: 600;
+    color: #6e6b6e; /* Tom neutro para o logo */
+}
+
+.nav-buttons .btn {
+    background-color: #353535; /* Botão em cinza escuro */
+    border: 2px solid transparent;
+    padding: 10px 20px; /* Reduz o tamanho dos botões */
+    color: white; 
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px; /* Reduz o tamanho da fonte dos botões */
+    border-radius: 25px; /* Bordas mais arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Poppins', sans-serif; /* Fonte estilizada para botões */
+}
+
+.nav-buttons .btn:hover {
+    background-color: #6e6b6e; /* Cinza médio no hover */
+    transform: scale(1.1); /* Aumenta mais no hover */
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 40px; /* Mais espaço ao redor */
+    flex-wrap: wrap;
+}
+
+.text-section {
+    max-width: 45%; /* Mantém 45% da largura para deixar mais espaço para a imagem */
+    text-align: left;
+    margin-top: 40px;
+}
+
+.text-section h1 {
+    font-size: 40px; /* Aumenta o título */
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif; /* Fonte para títulos */
+    color: #353535; /* Cor escura para o título */
+}
+
+.text-section p {
+    font-size: 20px; /* Texto um pouco maior */
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif; /* Fonte para parágrafos */
+    color: #495057; /* Cor neutra */
+}
+
+.text-section a {
+    color: #6e6b6e; /* Link com tom neutro */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.text-section a:hover {
+    color: #353535; /* Escurece no hover */
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px; /* Espaçamento maior entre os botões */
+}
+
+.cta-buttons .cta-btn {
+    background: linear-gradient(to right, #353535, #6e6b6e); /* Gradiente neutro */
+    border: none;
+    padding: 12px 30px; /* Botões menores */
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* Fonte estilizada para botões */
+    font-size: 16px; /* Tamanho de fonte menor */
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Sombra mais visível */
+}
+
+.cta-btn:hover {
+    background: linear-gradient(to right, #6e6b6e, #353535); /* Gradiente invertido no hover */
+    transform: scale(1.1); /* Aumenta mais no hover */
+}
+
+.image-section {
+    max-width: 60%; /* Aumenta a largura da imagem */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    max-height: 480px; /* Aumenta a altura máxima da imagem */
+    border-radius: 20px; /* Bordas mais suaves */
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+    color: #353535; /* Cor neutra para o texto do rodapé */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil no rodapé */
+}
+
+/* Caixa de texto personalizada */
+input[type="text"] {
+    width: 100%;
+    padding: 15px 20px; /* Maior padding para um visual mais moderno */
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #6e6b6e; /* Borda em cinza suave */
+    border-radius: 30px; /* Bordas arredondadas */
+    background-color: white;
+    color: #353535;
+    font-size: 16px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #353535; /* Borda mais escura no foco */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
